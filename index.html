@@ -22,6 +22,15 @@
     max-width: 650px;
     width: 100%;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  td {
+    padding: 0px;
+  }
+
+  button {
+    font-family: 'Montserrat', sans-serif;
   }
 
   a {
@@ -48,11 +57,17 @@
         </table>
       </td>
     </tr>
-    <tr style="width: 100%; height: 400px">
-      <!-- <td><img src="" alt=""></td> -->
-      <td>
+    <tr style="width: 100%; height: 400px; background-image: url(https://res.cloudinary.com/dhjoeubqp/image/upload/v1693689739/DDW/pexels-isaac-taylor-2305084_rhfaus.jpg); background-repeat: no-repeat; background-size: cover;">
+      <td style="display: inline-block;">
         <img src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1693678844/DDW/nerdearla-simple_yiwnec.png"
           alt="Logo de Nerdearla" style="width: 645px; height: auto" />
+      </td>
+      <td style="display: inline-block;">
+        <p style="color: #fff;">
+          <span>17 a 19 de octubre</span>
+          <span>Charlas educativas,</span>
+          <span>dedicadas a la tecnología.</span>
+        </p>
       </td>
     </tr>
 
@@ -108,21 +123,31 @@
           <tr>
             <td style="padding-right: 15px;">
               <button style="
-                  padding: 2em;
+                  font-weight: bold;
+                  font-size: 16px;
+                  padding: 1.5rem 1.7rem;
                   border: none;
                   border-radius: 5px;
                   background-color: #f0a900;
-                  ">
+                  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                  cursor: pointer;
+                  "
+                  href="#">
                 ¡Regístrate ya!
               </button>
             </td>
             <td style="padding-left: 15px;">
               <button style="
-                  padding: 2em;
+                  font-weight: bold;
+                  font-size: 16px;
+                  padding: 1.5rem 1.7rem;
                   border: none;
                   border-radius: 5px;
                   background-color: #f0a900;
-                ">
+                  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                  cursor: pointer;
+                "
+                href="#">
                 Más información
               </button>
             </td>
@@ -131,31 +156,33 @@
       </td>
     </tr>
 
+
     <!-- SECCION MAPA -->
-    <tr style="background-color: #282828; width: 100%; height: 400px; display: flex;">
-      <td style="display: flex; flex-direction: column; justify-content: space-around; width: 40%; padding: 40px 0px 40px 20px;">
-          <img src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1693684489/DDW/maps-konex_ybfq4o.png"
-            alt="Ubicacion Konex" style="width: 270px;">
-        <div style="display: flex; align-items: center; justify-content: space-evenly;">
-          <img src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1693684505/DDW/icono-ubicacion_ai8rxn.png"
-          alt="Icono_ubicacion" style="width: 31px; height: 31px;">
-          <p style="color: #fff; font-size: 12px; display: flex; flex-direction: column;">
-            <span>SARMIENTO 3131 [C1196AAG]</span>
-            <span>BUENOS AIRES, ARGENTINA</span>
+
+    <tr style="background-color: #282828; width: 100%; height: 350px;">
+      <td style="display: inline-block; height: inherit; width: 42%; padding: 0px 0px 0px 6px;">
+        <a style="display: inline-block; border-radius: 50%; margin: 15px 0px;" href="https://www.google.com/maps/place/Ciudad+Cultural+Konex/@-34.6065695,-58.4105342,15z/data=!4m2!3m1!1s0x0:0x6dd823092cb367d9?sa=X&ved=2ahUKEwjiuq__gZSBAxUpppUCHVJGApAQ_BJ6BAhFEAA&ved=2ahUKEwjiuq__gZSBAxUpppUCHVJGApAQ_BJ6BAhXEAg" target="_blank">
+          <img style="width: 270px; border-radius: 50%;" src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1693684489/DDW/maps-konex_ybfq4o.png" alt="Ubicacion Konex">
+        </a>
+        <div style="display: inline-block;">
+          <img style="display: inline; width: 35px; height: 31px;" src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1693684505/DDW/icono-ubicacion_ai8rxn.png" alt="Icono_ubicacion">
+          <p style="display: inline-block; font-size: 12px; color: #fff; font-weight: 300; margin-left: 10px;">
+            <span style="display: block;">SARMIENTO 3131 [C1196AAG]</span>
+            <span style="display: block;">BUENOS AIRES, ARGENTINA</span>
           </p>
         </div>
       </td>
-      <td style="width: 60%; display: flex; flex-direction: column; justify-content: space-evenly; align-items: flex-end; padding: 20px;">
-        <h2 style="color: #fff; margin-top: 0px; font-size: 1em; text-align: end;">INFORMACIÓN DEL PRÓXIMO EVENTO</h2>
-        <p style="color: #fff; text-align: end; line-height: 1.7; ">El próximo evento tendrá lugar en Ciudad Cultural Konex, el espacio situado en el mítico barrio del Abasto de la ciudad de Buenos Aires. </p>
-        <a href="https://registro.nerdear.la/?utm_source=navbar" target="_blank" style="width: 60%; height: 3rem; font-size: 1em; cursor: pointer; background-color: #fff; font-weight: bold; border-radius: 5px; text-decoration: none; color: #000; display: flex; align-items:center; justify-content: center; padding: 10px">Compra tus entradas</a>
+      <td style="display: inline-block; height: inherit; width: 50%; vertical-align: top; color: #fff; text-align: end; padding: 0px 7px 0px 0px;">
+        <h2 style="margin: 28px 0px;">INFORMACIÓN DEL PRÓXIMO EVENTO</h2>
+        <p style="margin: 28px 0px; font-size: 16px; line-height: 1.3;">El próximo evento tendrá lugar en Ciudad Cultural Konex, el espacio situado en el mítico barrio del Abasto de la ciudad de Buenos Aires.</p>
+        <button style="padding: 25px; margin: 28px 0px; color: #000; font-size: 16px; font-weight: bold; border: none; border-radius: 5px; background-color: #ffffff; cursor: pointer; box-shadow: rgba(233, 233, 233, 0.2) 0px 7px 29px 0px;" href="#">Compra tus entradas</button>
       </td>
     </tr>
-    <!-- <tr>
-      <img src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1693683514/DDW/imagen-konex_j1mgti.png"
-      alt="Imagen_Konex" style="width: 100%; height: 287px;">
-    </tr> -->
-
+    <tr>
+      <td>
+        <img style="width: 100%;" src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1693683514/DDW/imagen-konex_j1mgti.png" alt="Banner de Konex">
+      </td>
+    </tr>
 
     <!-- seccion speakers -->
 
