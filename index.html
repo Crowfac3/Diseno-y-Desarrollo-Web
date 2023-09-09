@@ -14,7 +14,7 @@
     }
 
     table {
-      background-color: #fff;
+      background-color: #ffffff;
       border-spacing: 0;
       margin: auto;
       max-width: 650px;
@@ -35,10 +35,44 @@
       color: #57d2df;
       text-decoration: none;
     }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (min-width: 516px) {
+      .columnas_ubicacion {
+        width: 48%;
+      }
+    }
+
+    @media (max-width: 544px) {
+      .columnas_ubicacion p {
+        /* display: block; */
+        text-align: center;
+      }
+      .columnas_ubicacion h2{
+        font-size: 1.3em;
+        text-align: center;
+      }
+      .columnas_ubicacion div {
+        text-align: center;
+      }
+      .redes {
+        /* display: block; */
+        width: 100% !important;
+        padding: 0px;
+      }
+      .metricas {
+        display: block !important;
+      }
+    }
   </style>
 
   <body>
-    <table style="background-color: #fdfdfd">
+    <table style="background-color: #fcfcfc">
       <tr style="background-color: #000">
         <td style="display: block">
           <table style="background-color: #000">
@@ -111,7 +145,7 @@
           background-color: #f0a900;
         "
       >
-        <td style="display: inline-block; margin-top: 10px">
+        <td class="metricas" style="display: inline-block; margin-top: 10px">
           <img
             src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1693694124/DDW/web_3059484_atf87f.png"
             alt="icono mundo"
@@ -120,7 +154,7 @@
           <h2 style="margin: 5px 0 0 5px">20+</h2>
           <p style="margin-top: 5px">Países Alcanzados</p>
         </td>
-        <td style="display: inline-block; margin: 10px 30px 0 30px">
+        <td class="metricas" style="display: inline-block; margin: 10px 30px 0 30px">
           <img
             src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1693694124/DDW/people_2118701_crbqdo.png"
             alt="icono mundo"
@@ -129,7 +163,7 @@
           <h2 style="margin: 5px 0 0">100</h2>
           <p style="margin-top: 5px">Países Alcanzados</p>
         </td>
-        <td style="display: inline-block; margin-top: 10px">
+        <td class="metricas" style="display: inline-block; margin-top: 10px">
           <img
             src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1693694124/DDW/clock_3936550_dxahvm.png"
             alt="icono mundo"
@@ -201,12 +235,12 @@
 
       <!-- SECCION MAPA -->
 
-      <tr style="background-color: #282828; width: 100%; min-height: 350px">
-        <td
+      <tr style="background-color: #282828; max-width: 640px; width: 100%; min-height: 350px">
+        <td class="columnas_ubicacion"
           style="
             display: inline-block;
             height: inherit;
-            width: 42%;
+            /* width: 42%; */
             padding: 0px 0px 0px 6px;
           "
         >
@@ -217,10 +251,10 @@
               margin: 25px 10px 0px 0px;
             "
             href="https://www.google.com/maps/place/Ciudad+Cultural+Konex/@-34.6065695,-58.4105342,15z/data=!4m2!3m1!1s0x0:0x6dd823092cb367d9?sa=X&ved=2ahUKEwjiuq__gZSBAxUpppUCHVJGApAQ_BJ6BAhFEAA&ved=2ahUKEwjiuq__gZSBAxUpppUCHVJGApAQ_BJ6BAhXEAg"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             <img
-              style="width: 270px; border-radius: 50%"
+              style="width: 240px; border-radius: 50%"
               src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1693684489/DDW/maps-konex_ybfq4o.png"
               alt="Ubicacion Konex"
             />
@@ -245,11 +279,11 @@
             </p>
           </div>
         </td>
-        <td
+        <td class="columnas_ubicacion"
           style="
             display: inline-block;
             height: inherit;
-            width: 50%;
+            /* width: 50%; */
             vertical-align: top;
             color: #fff;
             text-align: end;
@@ -261,23 +295,25 @@
             El próximo evento tendrá lugar en Ciudad Cultural Konex, el espacio
             situado en el mítico barrio del Abasto de la ciudad de Buenos Aires.
           </p>
-          <button
-            style="
-              padding: 25px;
-              margin: 28px 0px;
-              color: #000;
-              font-size: 16px;
-              font-weight: bold;
-              border: none;
-              border-radius: 5px;
-              background-color: #ffffff;
-              cursor: pointer;
-              box-shadow: rgba(233, 233, 233, 0.2) 0px 7px 29px 0px;
-            "
-            href="#"
-          >
-            Compra tus entradas
-          </button>
+          <div>
+            <button
+              style="
+                padding: 25px;
+                margin: 28px 0px;
+                color: #000;
+                font-size: 16px;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                background-color: #ffffff;
+                cursor: pointer;
+                box-shadow: rgba(233, 233, 233, 0.2) 0px 7px 29px 0px;
+              "
+              href="#"
+            >
+              Compra tus entradas
+            </button>
+          </div>
         </td>
       </tr>
       <tr>
@@ -403,6 +439,7 @@
 
       <tr
         style="
+          max-width: 640px;
           width: 100%;
           height: 80px;
           background-image: url(https://res.cloudinary.com/dhjoeubqp/image/upload/v1693683514/DDW/imagen-konex_j1mgti.png);
@@ -410,12 +447,11 @@
           background-size: cover;
         "
       >
-        <td
+        <td class="redes"
           style="
-            text-align: left;
+            width: 45%;
             display: inline-block;
-            padding-right: 35%;
-            margin-top: 25px;
+            padding: 25px 0px;
           "
         >
           <img
@@ -424,36 +460,63 @@
             style="max-width: 200px; height: auto"
           />
         </td>
-        <td
+        <td class="redes"
           style="
-            text-align: right;
+            width: 45%;
             display: inline-block;
-            /* padding-left: 15%; */
-            margin-top: 25px;
+            padding: 25px 0px;
           "
         >
-          <img
-            src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1694087366/DDW/tiktokB_lkfakb.png"
-            alt="Logo de Tik Tok"
-            style="max-width: 35px"
-          />
-          <img
-            src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1694087681/DDW/image_2_gbltgx.png"
-            alt="Logo de Instagram"
-            style="max-width: 35px"
-          />
-          <img
-            src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1694087680/DDW/image_1_orke8r.png"
-            alt="Logo de YouTube"
-            style="max-width: 35px"
-          />
-          <img
-            src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1694087680/DDW/image_yetb7h.png"
-            alt="Logo de Facebook"
-            style="max-width: 35px"
-          />
+          <ul>
+            <li style="display: inline-block;">
+              <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
+                <img
+                src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1694087366/DDW/tiktokB_lkfakb.png"
+                alt="Logo de Tik Tok"
+                style="max-width: 35px"
+              />
+              </a>
+            </li>
+            <li style="display: inline-block;">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img
+                src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1694087681/DDW/image_2_gbltgx.png"
+                alt="Logo de Instagram"
+                style="max-width: 35px"
+              />
+              </a>
+            </li>
+            <li style="display: inline-block;">
+              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                <img
+                src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1694087680/DDW/image_1_orke8r.png"
+                alt="Logo de YouTube"
+                style="max-width: 35px"
+              />
+              </a>
+            </li>
+            <li style="display: inline-block;">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <img
+                src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1694087680/DDW/image_yetb7h.png"
+                alt="Logo de Facebook"
+                style="max-width: 35px"
+              />
+              </a>
+            </li>
+          </ul>
+          
+          
+          
+          
         </td>
       </tr>
+
+      
+
+
+
+      <!-- FOOTER -->
       <tr style="background-color: #000">
         <td>
           <p
@@ -476,8 +539,7 @@
             <td style="padding: 0 15px; display: inline-block">
               <a
                 style="font-size: small"
-                href="http://"
-                target="_blank"
+                href="#"
                 rel="noopener noreferrer;"
                 >Darse de baja</a
               >
@@ -485,8 +547,7 @@
             <td style="padding: 0px 15px; display: inline-block">
               <a
                 style="font-size: small"
-                href="http://"
-                target="_blank"
+                href="#"
                 rel="noopener noreferrer"
                 >Ver en el Navegador</a
               >
